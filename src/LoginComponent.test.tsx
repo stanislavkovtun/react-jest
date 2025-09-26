@@ -66,7 +66,7 @@ describe('Login component tests', () => {
 		expect(resultLabel.textContent).toBe('UserName and password required!');
 	});
 
-	it.only('right credentials - successful login', async () => {
+	it('right credentials - successful login', async () => {
 		// Not correct! Because the login method is async
 		// loginServiceMock.login.mockReturnValueOnce('1234');
 
