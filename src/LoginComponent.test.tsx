@@ -66,8 +66,13 @@ describe('Login component tests', () => {
 		expect(resultLabel.textContent).toBe('UserName and password required!');
 	});
 
-	it('right credentials - successful login', async () => {
+	it.only('right credentials - successful login', async () => {
+		// Not correct! Because the login method is async
+		// loginServiceMock.login.mockReturnValueOnce('1234');
+
+		// For async methods use mockResolvedValueOnce
 		loginServiceMock.login.mockResolvedValueOnce('1234');
+
 		const inputs = container.querySelectorAll('input');
 		const userNameInput = inputs[0];
 		const passwordInput = inputs[1];
