@@ -16,7 +16,6 @@ function LoginComponent({ loginService, setToken }: LoginProps) {
 		console.log(userName + ' ' + password);
 		if (userName && password) {
 			const loginResponse = await loginService.login(userName, password);
-			// const loginResponse = loginService.login(userName, password);
 			console.log(loginResponse);
 			if (loginResponse) {
 				setLoginResult('successful login');
@@ -31,7 +30,6 @@ function LoginComponent({ loginService, setToken }: LoginProps) {
 
 	function renderLoginResult() {
 		if (loginResult) {
-			// return <label data-testid='resultLabel'>{loginResult}</label>;
 			return <p data-testid='resultLabel'>{loginResult}</p>;
 		}
 	}
