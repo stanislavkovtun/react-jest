@@ -84,6 +84,8 @@ describe('Login component tests', () => {
 
 		expect(loginServiceMock.login).toBeCalledWith('someUser', 'somePassword');
 
+		// screen.getByTestId will not work because the component is rerendered asyncly, we should use findByTestId
+
 		const resultLabel = await screen.findByTestId('resultLabel');
 		expect(resultLabel.textContent).toBe('successful login');
 	});
