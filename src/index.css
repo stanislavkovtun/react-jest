@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h2 {
+  text-align: center;
+}
+
+form {
+  background-color:aliceblue;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 24px;
+}
+
+input {
+  font-size: 24px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  color:darkgray;
+}
+
+p {
+  font-size: 20px;
+  color:cornflowerblue;
+  text-align: center;
+  margin-top: 20px;
+}
